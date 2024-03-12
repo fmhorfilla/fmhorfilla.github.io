@@ -1400,7 +1400,7 @@ I highly recommend Franz to any organization seeking a talented and reliable sof
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const text = "Franz Marvin";
-      const speed = 200; // Adjust the speed (milliseconds per character)
+      const speed = 200;
 
       let i = 0;
       function typeWriter() {
@@ -1409,7 +1409,6 @@ I highly recommend Franz to any organization seeking a talented and reliable sof
           i++;
           setTimeout(typeWriter, speed);
         } else {
-          // Optional: Restart the typing animation after reaching the end
           i = 0;
           document.getElementById('typed-text').innerHTML = '';
           setTimeout(typeWriter, speed);
